@@ -2,7 +2,7 @@ function firstNonRepeatedChar(str) {
     str = [...str];
 
     let count = str.map(char => getCount(char, str)).find(char => char !== null);
-	return count
+	return count || null
 	
    }
 
